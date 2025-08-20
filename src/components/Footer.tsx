@@ -74,7 +74,7 @@ export const Footer = () => {
             {/* Presentation Note */}
             <div className="border-t border-slate-600 pt-8">
               <p className="text-cream/50 text-sm mb-2">Investor presentation — contenido conceptual</p>
-              <p className="text-cream/60 text-sm">&copy; 2024 LEGNA — by Gino's Padova. Tutti i diritti riservati.</p>
+              <p className="text-cream/60 text-sm">&copy; 2025 LEGNA — by Gino's Padova. Tutti i diritti riservati.</p>
             </div>
           </div>
         </div>
