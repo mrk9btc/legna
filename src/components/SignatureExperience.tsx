@@ -14,6 +14,7 @@ export const SignatureExperience = () => {
   const visualRef = useRef<HTMLDivElement>(null);
   const particlesRef = useRef<HTMLDivElement>(null);
   const stepsRef = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (!sectionRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -111,6 +112,34 @@ export const SignatureExperience = () => {
     };
   }, []);
 
+  // Video autoplay handler
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleVideoPlay = async () => {
+      try {
+        await video.play();
+        console.log('Video is playing successfully');
+      } catch (error) {
+        console.log('Autoplay failed, user interaction required:', error);
+      }
+    };
+
+    // Try to play when component mounts
+    const timeoutId = setTimeout(handleVideoPlay, 500);
+
+    // Also try when the video is loaded
+    video.addEventListener('loadeddata', handleVideoPlay);
+    video.addEventListener('canplaythrough', handleVideoPlay);
+
+    return () => {
+      clearTimeout(timeoutId);
+      video.removeEventListener('loadeddata', handleVideoPlay);
+      video.removeEventListener('canplaythrough', handleVideoPlay);
+    };
+  }, []);
+
   return (
     <section 
       ref={sectionRef}
@@ -191,27 +220,40 @@ export const SignatureExperience = () => {
           {/* Video */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden shadow-dramatic">
             <video 
+              ref={videoRef}
               className="w-full h-full object-cover"
               autoPlay
               muted
               loop
               playsInline
+              controls={false}
+              preload="auto"
               poster="/tunnel_immersivo.png"
+              onLoadStart={() => console.log('Video loading started')}
+              onCanPlay={() => console.log('Video can play')}
+              onError={(e) => console.error('Video error:', e)}
             >
               <source src="/tunnel-immersivo.mp4" type="video/mp4" />
-              <img 
-                src="/tunnel_immersivo.png"
-                alt="Tunnel immersivo LEGNA con proyección de brasa y LED"
-                className="w-full h-full object-cover"
-              />
+              <source src="/tunnel-immersivo.mp4" type="video/webm" />
+              Your browser does not support the video tag.
             </video>
             
-            {/* Fallback image for low-end devices */}
-            <img 
-              src="/tunnel_immersivo.png"
-              alt="Tunnel immersivo LEGNA con proyección de brasa y LED"
-              className="absolute inset-0 w-full h-full object-cover md:hidden"
-            />
+            {/* Overlay per click-to-play fallback */}
+            <div 
+              className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity cursor-pointer"
+              onClick={(e) => {
+                const video = e.currentTarget.previousElementSibling as HTMLVideoElement;
+                if (video.paused) {
+                  video.play().catch(err => console.log('Play failed:', err));
+                } else {
+                  video.pause();
+                }
+              }}
+            >
+              <div className="w-16 h-16 bg-gold/80 rounded-full flex items-center justify-center">
+                <span className="text-charcoal text-2xl">▶</span>
+              </div>
+            </div>
           </div>
 
           {/* Foto tunnel */}
