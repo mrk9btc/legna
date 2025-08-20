@@ -87,12 +87,13 @@ export const Team = () => {
           </p>
         </div>
 
-        {/* Italian Team Roles - Premium Grid */}
+        {/* Italian Team Roles - Premium Grid - 6 Cards Total */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
+          {/* Debug: {teamRoles.length} roles total */}
           {teamRoles.map((role, index) => (
             <div 
               key={index} 
-              className="bg-cream border border-slate-200 rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-medium transition-all duration-300 group h-full flex flex-col"
+              className="bg-cream border border-slate-200 rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-medium transition-all duration-300 group h-full flex flex-col opacity-100"
             >
               <div className="text-center flex-1 flex flex-col">
                 <h3 className="font-display text-xl font-medium text-charcoal mb-4 group-hover:text-gold transition-colors">
