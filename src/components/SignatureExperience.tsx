@@ -119,24 +119,48 @@ export const SignatureExperience = () => {
 
     const handleVideoPlay = async () => {
       try {
-        await video.play();
-        console.log('Video is playing successfully');
+        // Force properties for mobile autoplay
+        video.muted = true;
+        video.playsInline = true;
+        video.setAttribute('webkit-playsinline', 'true');
+        
+        // Attempt to play
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          await playPromise;
+        }
       } catch (error) {
-        console.log('Autoplay failed, user interaction required:', error);
+        // Silent fail - video will show as poster image
       }
     };
 
-    // Try to play when component mounts
-    const timeoutId = setTimeout(handleVideoPlay, 500);
+    // Multiple attempts for better mobile compatibility
+    const timeouts = [
+      setTimeout(handleVideoPlay, 100),
+      setTimeout(handleVideoPlay, 500),
+      setTimeout(handleVideoPlay, 1000)
+    ];
 
-    // Also try when the video is loaded
-    video.addEventListener('loadeddata', handleVideoPlay);
-    video.addEventListener('canplaythrough', handleVideoPlay);
+    // Event-based triggers
+    video.addEventListener('loadedmetadata', handleVideoPlay);
+    video.addEventListener('canplay', handleVideoPlay);
+    
+    // Intersection Observer for when video comes into view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && video.paused) {
+          handleVideoPlay();
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    observer.observe(video);
 
     return () => {
-      clearTimeout(timeoutId);
-      video.removeEventListener('loadeddata', handleVideoPlay);
-      video.removeEventListener('canplaythrough', handleVideoPlay);
+      timeouts.forEach(clearTimeout);
+      video.removeEventListener('loadedmetadata', handleVideoPlay);
+      video.removeEventListener('canplay', handleVideoPlay);
+      observer.disconnect();
     };
   }, []);
 
@@ -226,34 +250,15 @@ export const SignatureExperience = () => {
               muted
               loop
               playsInline
+              webkit-playsinline="true"
               controls={false}
-              preload="auto"
+              preload="metadata"
               poster="/tunnel_immersivo.png"
-              onLoadStart={() => console.log('Video loading started')}
-              onCanPlay={() => console.log('Video can play')}
-              onError={(e) => console.error('Video error:', e)}
+              style={{ pointerEvents: 'none' }}
             >
               <source src="/tunnel-immersivo.mp4" type="video/mp4" />
-              <source src="/tunnel-immersivo.mp4" type="video/webm" />
               Your browser does not support the video tag.
             </video>
-            
-            {/* Overlay per click-to-play fallback */}
-            <div 
-              className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity cursor-pointer"
-              onClick={(e) => {
-                const video = e.currentTarget.previousElementSibling as HTMLVideoElement;
-                if (video.paused) {
-                  video.play().catch(err => console.log('Play failed:', err));
-                } else {
-                  video.pause();
-                }
-              }}
-            >
-              <div className="w-16 h-16 bg-gold/80 rounded-full flex items-center justify-center">
-                <span className="text-charcoal text-2xl">▶</span>
-              </div>
-            </div>
           </div>
 
           {/* Foto tunnel */}

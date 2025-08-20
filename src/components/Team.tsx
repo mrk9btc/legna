@@ -74,9 +74,9 @@ const staffLocal = [
 
 export const Team = () => {
   return (
-    <section id="team" className="py-24 bg-gradient-to-b from-pearl to-cream">
+    <section id="team" className="py-16 md:py-24 bg-gradient-to-b from-pearl to-cream">
       <div className="container mx-auto max-w-7xl px-6">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <div className="eyebrow mb-4 text-copper">Maestria Italiana</div>
           <h2 className="font-display text-5xl md:text-6xl font-medium text-charcoal mb-8 leading-tight">
             Nuestro equipo italiano
@@ -143,7 +143,7 @@ export const Team = () => {
         </div>
 
         {/* Números del equipo italiano */}
-        <div className="grid md:grid-cols-4 gap-8 mt-16 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 mb-12">
           <div className="text-center">
             <div className="text-4xl font-display font-medium text-copper mb-2">15+</div>
             <p className="text-ash text-sm uppercase tracking-wider">Años experiencia promedio</p>
@@ -163,7 +163,7 @@ export const Team = () => {
         </div>
 
         {/* Elegant Quote */}
-        <div className="text-center mt-20">
+        <div className="text-center mt-12 md:mt-20">
           <div className="max-w-3xl mx-auto">
             <blockquote className="font-accent text-2xl md:text-3xl italic text-copper leading-relaxed">
               "La mesa italiana no es solo comida, es familia"
@@ -177,7 +177,7 @@ export const Team = () => {
         </div>
 
         {/* Timeline esperienza italiana */}
-        <div className="bg-gradient-to-r from-slate-50 to-cream rounded-3xl p-12 mt-16">
+        <div className="bg-gradient-to-r from-slate-50 to-cream rounded-3xl p-8 md:p-12 mt-12 md:mt-16">
           <div className="text-center mb-12">
             <div className="eyebrow mb-4 text-copper">Trayectoria</div>
             <h3 className="font-display text-2xl font-medium text-charcoal">
