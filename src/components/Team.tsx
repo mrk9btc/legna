@@ -88,22 +88,22 @@ export const Team = () => {
         </div>
 
         {/* Italian Team Roles - Premium Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16">
           {teamRoles.map((role, index) => (
             <div 
               key={index} 
-              className="bg-cream border border-slate-200 rounded-3xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 group"
+              className="bg-cream border border-slate-200 rounded-3xl p-6 md:p-8 shadow-soft hover:shadow-medium transition-all duration-300 group h-full flex flex-col"
             >
-              <div className="text-center">
+              <div className="text-center flex-1 flex flex-col">
                 <h3 className="font-display text-xl font-medium text-charcoal mb-4 group-hover:text-gold transition-colors">
                   {role.title}
                 </h3>
                 
-                <p className="text-ash leading-relaxed mb-6">
+                <p className="text-ash leading-relaxed mb-6 flex-1">
                   {role.description}
                 </p>
                 
-                <div className="inline-flex items-center px-4 py-2 bg-slate-100 rounded-full">
+                <div className="inline-flex items-center px-4 py-2 bg-slate-100 rounded-full mt-auto">
                   <span className="text-xs uppercase tracking-wider text-slate-600 font-medium">
                     {role.label}
                   </span>
@@ -114,15 +114,15 @@ export const Team = () => {
         </div>
 
         {/* Local Staff Section - Elevated Panel */}
-        <div className="bg-gradient-to-br from-charcoal to-smoke rounded-3xl p-12 shadow-dramatic">
-          <div className="text-center mb-12">
+        <div className="bg-gradient-to-br from-charcoal to-smoke rounded-3xl p-8 md:p-12 shadow-dramatic">
+          <div className="text-center mb-8 md:mb-12">
             <div className="eyebrow mb-4 text-gold">STAFF LOCAL</div>
             <h3 className="font-display text-2xl font-medium text-cream">
               Formación y Excelencia
             </h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {staffLocal.map((feature, index) => {
               const IconComponent = staffIconMap[feature.icon as keyof typeof staffIconMap];
               return (
