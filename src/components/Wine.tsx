@@ -27,7 +27,7 @@ export const Wine = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-dramatic">
             <img 
-              src="/img/vini.jpeg"
+              src="/vini.jpeg"
               alt="Selezione vini italiani LEGNA - cantina curata"
               className="w-full h-full object-cover"
             />
@@ -43,7 +43,7 @@ export const Wine = () => {
           </div>
           <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-dramatic">
             <img 
-              src="/img/vini1.jpeg"
+              src="/vini1.jpeg"
               alt="Degustazione vini italiani - esperienza sommelier LEGNA"
               className="w-full h-full object-cover"
             />

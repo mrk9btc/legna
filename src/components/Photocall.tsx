@@ -76,7 +76,7 @@ export const Photocall = () => {
           <div className="relative">
             <div className="aspect-square rounded-3xl overflow-hidden shadow-dramatic">
               <img 
-                src="/img/photocall.png"
+                src="/photocall.png"
                 alt="Photocall LEGNA - set Instagram-ready con brand identity"
                 className="w-full h-full object-cover"
               />

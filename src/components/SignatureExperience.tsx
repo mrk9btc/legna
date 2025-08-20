@@ -196,11 +196,11 @@ export const SignatureExperience = () => {
               muted
               loop
               playsInline
-              poster="/img/tunnel_immersivo.png"
+              poster="/tunnel_immersivo.png"
             >
-              <source src="/img/tunnel-immersivo.mp4" type="video/mp4" />
+              <source src="/tunnel-immersivo.mp4" type="video/mp4" />
               <img 
-                src="/img/tunnel_immersivo.png"
+                src="/tunnel_immersivo.png"
                 alt="Tunnel immersivo LEGNA con proyección de brasa y LED"
                 className="w-full h-full object-cover"
               />
@@ -208,7 +208,7 @@ export const SignatureExperience = () => {
             
             {/* Fallback image for low-end devices */}
             <img 
-              src="/img/tunnel_immersivo.png"
+              src="/tunnel_immersivo.png"
               alt="Tunnel immersivo LEGNA con proyección de brasa y LED"
               className="absolute inset-0 w-full h-full object-cover md:hidden"
             />
@@ -217,7 +217,7 @@ export const SignatureExperience = () => {
           {/* Foto tunnel */}
           <div className="relative h-[320px] rounded-2xl overflow-hidden shadow-dramatic">
             <img 
-              src="/img/tunnel_immersivo.png"
+              src="/tunnel_immersivo.png"
               alt="Tunnel immersivo LEGNA - vista statica dettagliata"
               className="w-full h-full object-cover"
             />
@@ -328,7 +328,7 @@ export const SignatureExperience = () => {
           <div className="eyebrow mb-6 text-copper">Vista Exterior</div>
           <div className="relative h-[320px] rounded-2xl overflow-hidden bg-gradient-to-br from-charcoal to-smoke shadow-dramatic">
             <img 
-              src="/img/exterior-projection.png"
+              src="/exterior-projection.png"
               alt="Proyección exterior LEGNA - vista facciata con tecnología immersiva"
               className="w-full h-full object-cover opacity-90"
             />
