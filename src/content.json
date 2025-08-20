@@ -1,0 +1,305 @@
+{
+  "hero": {
+    "eyebrow": "Caracas, muy pronto",
+    "title": "LEGNA",
+    "subtitle": "by Gino's Padova",
+    "brand_line": "by Gino's Padova",
+    "payoff": "la brasa que une — La brace che unisce",
+    "body": "Cocina de brasa italiana, vino que cuenta historias y una noche que se transforma en club. No es parrilla: es brasa fina."
+  },
+  "vision": {
+    "title": "Donde el fuego se convierte en comunidad",
+    "content": [
+      "La brasa no corre, respira. Reúne. En LEGNA el fuego no quema: abraza.",
+      "La mesa es un ritual, el vino nuestra lengua, Caracas la ciudad que encendemos.",
+      "Aquí, cada llama cuenta una historia. Cada plato es un encuentro. Cada copa, una conversación que trasciende fronteras."
+    ]
+  },
+  "wine": [
+    {
+      "name": "Barolo DOCG",
+      "region": "Piemonte",
+      "description": "El rey de los vinos italianos",
+      "grape": "Nebbiolo",
+      "year": "2019"
+    },
+    {
+      "name": "Brunello di Montalcino",
+      "region": "Toscana", 
+      "description": "Elegancia toscana en cada sorbo",
+      "grape": "Sangiovese",
+      "year": "2018"
+    },
+    {
+      "name": "Etna Rosso",
+      "region": "Sicilia",
+      "description": "Volcánico, intenso, sorprendente",
+      "grape": "Nerello Mascalese",
+      "year": "2020"
+    },
+    {
+      "name": "Verdicchio",
+      "region": "Marche",
+      "description": "Frescura marina del Adriático", 
+      "grape": "Verdicchio",
+      "year": "2022"
+    },
+    {
+      "name": "Franciacorta",
+      "region": "Lombardía",
+      "description": "Burbujas italianas de alta expresión",
+      "grape": "Chardonnay, Pinot Nero",
+      "year": "2019"
+    }
+  ],
+  "team": [
+    {
+      "name": "Marco Benedetti",
+      "role": "Executive Chef",
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?chef,italian,professional"
+    },
+    {
+      "name": "Giulia Rossi", 
+      "role": "Chef",
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?female,chef,kitchen"
+    },
+    {
+      "name": "Andrea Conti",
+      "role": "Sous Chef", 
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?sous,chef,culinary"
+    },
+    {
+      "name": "Francesco Villa",
+      "role": "Sommelier",
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?sommelier,wine,professional"
+    },
+    {
+      "name": "Valentina Costa",
+      "role": "Head Camarero",
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?server,restaurant,professional"
+    },
+    {
+      "name": "Lorenzo Martini",
+      "role": "Club Manager", 
+      "description": "Residencia italiana",
+      "image": "https://source.unsplash.com/400x400/?manager,hospitality,professional"
+    }
+  ],
+
+  "social": {
+    "instagram": "@legna_caracas",
+    "tiktok": "@legnacaracas",
+    "hashtags": ["#ComparteLaBrasa", "#LEGNACaracas", "#LaBraceQueUne"]
+  },
+  "signatureExperience": {
+    "title": "Firma Visual — de la brasa a la luz",
+    "description": "Escalera inmersiva con proyección de brasa y túnel de luz cálida. Un pasaje sensorial que te invita al privè.",
+    "features": [
+      {
+        "title": "Escalera inmersiva",
+        "description": "Proyección brasa + partículas sutiles · ritmo de luz · pensado para UGC"
+      },
+      {
+        "title": "Fachada viva",
+        "description": "Iluminación exterior con acentos cobre y animaciones brasa · momento 'welcome wow'"
+      },
+      {
+        "title": "Audio-visual",
+        "description": "Diseño de sonido y sincronía luz/ritmo · de cena a club sin ruptura"
+      }
+    ],
+    "specs": "2× proyección 6–8k · LED 2200–2700K · Loop 30–45s",
+    "note": "Hecho para ser filmado y compartido (UGC)"
+  },
+  "photoMoments": {
+    "title": "Tu momento LEGNA",
+    "subtitle": "Hecho para ser compartido: creamos sets fotogénicos que multiplican el contenido orgánico y elevan la experiencia.",
+    "features": [
+      {
+        "title": "Photocall (3×2 m)",
+        "description": "backdrop de marca + partner; iluminación controlada; punto de bienvenida"
+      },
+      {
+        "title": "Pared con alas (3×2 m, en sala)",
+        "description": "artwork con acentos cobre; versión con proyección sutil para 'efecto vivo'"
+      },
+      {
+        "title": "Pared \"vaca\" (4×2,5 m)",
+        "description": "gráfica cortes (estilo macelleria elegante) + mapping estático; storytelling producto"
+      }
+    ],
+    "summary": "Cada set suma UGC, alcance y recuerdo. Curamos ángulos, luz y copy en sitio."
+  },
+  "brandIdentity": {
+    "title": "Brand Identity",
+    "wordmark": "LEGNA — by Gino's Padova",
+    "palette": [
+      { "name": "Carbone", "color": "#0B0B0B" },
+      { "name": "Ferro", "color": "#3A3A3A" },
+      { "name": "Ember", "color": "#C43E2F" },
+      { "name": "Copper", "color": "#B87333" }
+    ],
+    "usage": {
+      "clearSpace": "clear space = H de \"L\"",
+      "minSize": "min-size 24 mm/160 px",
+      "variants": ["dark", "copper", "stacked"]
+    },
+    "donts": [
+      "no distorsiones",
+      "no glow pesado", 
+      "no gradientes no-brand"
+    ]
+  },
+  "wineProgram": {
+    "title": "Italia en cada copa",
+    "description": "Maridajes como relatos por regiones. Decantación a la vista, grandes formatos y servicio de sommelier. El vino es nuestro idioma.",
+    "highlight": "grandes formatos"
+  },
+  "brasa": {
+    "title": "Brasa fina — no parrilla",
+    "features": [
+      "Producto, técnica y control: sin humo invasivo",
+      "Rituales al centro de mesa",
+      "Texturas, brasas y tiempo — precisión italiana"
+    ]
+  },
+  "club": {
+    "title": "Del fuego al sonido",
+    "description": "Coctelería teatral, túnel de LED cálidos, música de alta fidelidad. Un club para pocos, elegido por muchos.",
+    "access": "¿Cenaste con nosotros? Acceso al club gratis +3 invitados.",
+    "rental": "Sala VIP y Club disponibles para eventos privados (by request).",
+    "dressCode": "Dress code smart; experiencia íntima, seleccionada.",
+    "features": [
+      "LED tunnel con efectos inmersivos",
+      "Sistema audiovisual de última generación", 
+      "Signature cocktails teatrales",
+      "Guest DJs internacionales"
+    ]
+  },
+  "marketing": {
+    "title": "Hecho para ser compartido",
+    "management": "Gestionamos Instagram, TikTok y PR locales con calendario editorial, producción y reporting.",
+    "targets": [
+      { "label": "Lista de espera", "value": "1.5k" },
+      { "label": "Reel views (30 días)", "value": "250k" },
+      { "label": "Reservas preview", "value": "200" },
+      { "label": "PR activas", "value": "8" }
+    ]
+  },
+  "teamOperations": {
+    "description": "Equipo italiano residente: Executive Chef, Chef, Sous Chef, Sommelier, Head Camarero y Club Manager. Formación del staff local en servicio, brasa y vino."
+  },
+  "staffLocal": {
+    "title": "Staff Local",
+    "features": [
+      {
+        "icon": "BadgeCheck",
+        "title": "Estándar de servicio",
+        "description": "Protocolo italiano adaptado a Caracas"
+      },
+      {
+        "icon": "GraduationCap", 
+        "title": "Formación continua",
+        "description": "Workshops semanales con el equipo"
+      },
+      {
+        "icon": "HeartHandshake",
+        "title": "Cultura LEGNA",
+        "description": "Hospitalidad auténtica y detalle"
+      }
+    ]
+  },
+  "photocall": {
+    "title": "Tu momento LEGNA",
+    "description": "Área fotográfica con elementos signature para compartir tu experiencia"
+  },
+  "visual_features": [
+    "Parete con ali (proyección interactiva)",
+    "Parete con mucca (gráfica artística)",
+    "Illuminazione esterna con efectos audiovisuales"
+  ],
+  "cocina": {
+    "title": "Cocina & Inspiración",
+    "intro": "Platos icónicos que trascienden la técnica para convertirse en experiencia. Cada preparación narra una historia de fuego, tiempo y precisión italiana.",
+    "dishes": [
+      {
+        "name": "Bistecca al hueso",
+        "description": "Maduración 30d, sellado vivo, corte al momento",
+        "tags": ["carne", "brasa", "corte"],
+        "image": "https://source.unsplash.com/1200x900/?tomahawk,steak,grill"
+      },
+      {
+        "name": "Pulpo a la brasa",
+        "description": "Char suave, limón, aioli ahumada",
+        "tags": ["mar", "brasa", "cítrico"],
+        "image": "https://source.unsplash.com/1200x900/?octopus,grilled"
+      },
+      {
+        "name": "Costilla corta",
+        "description": "Lenta, glase de vino tinto, hueso limpio",
+        "tags": ["lento", "jugoso"],
+        "image": "https://source.unsplash.com/1200x900/?short-rib"
+      },
+      {
+        "name": "Carpaccio de res",
+        "description": "Aceite de especias, pecorino, pimienta",
+        "tags": ["crudo", "especias"],
+        "image": "https://source.unsplash.com/1200x900/?beef,carpaccio"
+      },
+      {
+        "name": "Risotto al Parmigiano",
+        "description": "En temporada: laminado en mesa",
+        "tags": ["ritual", "cremoso"],
+        "image": "https://source.unsplash.com/1200x900/?risotto"
+      },
+      {
+        "name": "Verduras del asador",
+        "description": "Alcachofa, espárragos, pimientos",
+        "tags": ["vegetal", "brasa"],
+        "image": "https://source.unsplash.com/1200x900/?grilled,vegetables"
+      }
+    ],
+    "rituales": {
+      "title": "Rituales de servicio",
+      "description": "Cortes al centro, decantación a la vista y grandes formatos en mesa.",
+      "note": "No es parrilla: es brasa fina."
+    },
+    "inspo": [
+      {
+        "url": "/img/piatti1.jpeg",
+        "alt": "piatto signature LEGNA - presentazione raffinata",
+        "category": "platos"
+      },
+      {
+        "url": "/img/piatti2.jpeg",
+        "alt": "emplatado fine dining con brasa italiana",
+        "category": "platos"
+      },
+      {
+        "url": "/img/piatti3.jpeg",
+        "alt": "carne al fuoco vivo - specialità italiana",
+        "category": "platos"
+      },
+      {
+        "url": "/img/piatti4.jpeg",
+        "alt": "presentazione gourmet con tecniche italiane",
+        "category": "platos"
+      },
+      {
+        "url": "/img/piatti5.jpeg",
+        "alt": "piatto finale con design minimal elegante",
+        "category": "platos"
+      },
+      {
+        "url": "/img/tavolo-inspo.png",
+        "alt": "Mesa elegante con mise en place LEGNA",
+        "category": "comunidad"
+      }
+    ]
+  }
+}

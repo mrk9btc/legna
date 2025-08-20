@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
+/* LEGNA Design System - Contemporary Culinary Excellence */
+
+@layer base {
+  :root {
+    /* LEGNA Brand Colors - Contemporary Fine Dining */
+    --color-charcoal: 0 0% 8%;         /* #141414 charcoal noir */
+    --color-smoke: 0 0% 15%;           /* #262626 smoke grey */
+    --color-ash: 0 0% 25%;             /* #404040 warm ash */
+    --color-cream: 42 15% 97%;         /* #F8F7F5 warm cream */
+    --color-pearl: 42 8% 92%;          /* #EEEBE7 pearl white */
+    --color-gold: 38 85% 62%;          /* #F5B942 golden accent */
+    --color-copper: 18 75% 55%;        /* #D4704A warm copper */
+    --color-ember: 12 88% 45%;         /* #D73027 ember red */
+    
+    /* Neutral palette */
+    --color-slate-50: 210 20% 98%;
+    --color-slate-100: 210 17% 95%;
+    --color-slate-200: 214 15% 91%;
+    --color-slate-300: 213 13% 83%;
+    --color-slate-400: 215 14% 66%;
+    --color-slate-500: 215 16% 47%;
+    --color-slate-600: 215 19% 35%;
+    --color-slate-700: 215 25% 27%;
+    --color-slate-800: 217 33% 17%;
+    --color-slate-900: 222 47% 11%;
+    
+    /* Semantic tokens */
+    --background: var(--color-cream);
+    --foreground: var(--color-charcoal);
+    --primary: var(--color-gold);
+    --primary-foreground: var(--color-charcoal);
+    --secondary: var(--color-copper);
+    --secondary-foreground: var(--color-cream);
+    --accent: var(--color-ember);
+    --accent-foreground: var(--color-cream);
+    --muted: var(--color-pearl);
+    --muted-foreground: var(--color-ash);
+    --border: var(--color-slate-200);
+    --card: var(--color-cream);
+    --card-foreground: var(--color-charcoal);
+    
+    /* Typography scale */
+    --font-display: 'Cormorant Garamond', 'Georgia', serif;
+    --font-body: 'Inter', 'system-ui', sans-serif;
+    --font-accent: 'Crimson Text', 'Times', serif;
+    
+    /* Premium shadows */
+    --shadow-soft: 0 2px 8px -2px hsl(var(--color-charcoal) / 0.08);
+    --shadow-medium: 0 4px 16px -4px hsl(var(--color-charcoal) / 0.12);
+    --shadow-large: 0 8px 32px -8px hsl(var(--color-charcoal) / 0.16);
+    --shadow-dramatic: 0 20px 60px -12px hsl(var(--color-charcoal) / 0.25);
+    --shadow-glow: 0 0 24px hsl(var(--color-gold) / 0.3);
+    
+    /* Refined gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--color-gold)), hsl(var(--color-copper)));
+    --gradient-smoke: linear-gradient(180deg, transparent, hsl(var(--color-smoke) / 0.03));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--color-charcoal)), hsl(var(--color-smoke)));
+    
+    /* Smooth animations */
+    --transition-swift: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-dramatic: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    
+    --radius: 12px;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-body;
+    font-size: 16px;
+    line-height: 1.65;
+    letter-spacing: 0.005em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    color: hsl(var(--color-charcoal));
+  }
+  
+  h1 {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+    line-height: 1.15;
+    font-weight: 500;
+  }
+  
+  h3 {
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    line-height: 1.25;
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    line-height: 1.35;
+    font-weight: 500;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: hsl(var(--color-ash));
+  }
+  
+  .text-large {
+    font-size: 1.125rem;
+    line-height: 1.65;
+  }
+  
+  .text-small {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--color-copper));
+  }
+  
+  /* Utilities per assicurare leggibilità */
+  .bg-dark {
+    background: hsl(var(--color-carbon));
+  }
+  
+  .bg-light {
+    background: hsl(var(--color-wood));
+  }
+  
+  .text-dark-primary {
+    color: hsl(var(--color-carbon));
+  }
+  
+  .text-dark-secondary {
+    color: hsl(var(--color-iron));
+  }
+  
+  .text-light-primary {
+    color: hsl(var(--color-wood));
+  }
+  
+  .text-light-secondary {
+    color: hsl(var(--color-wood) / 0.8);
+  }
+  
+  /* Override per sezioni specifiche */
+  .section-light {
+    background: hsl(var(--color-wood));
+    color: hsl(var(--color-carbon));
+  }
+  
+  .section-light h1,
+  .section-light h2,
+  .section-light h3,
+  .section-light h4,
+  .section-light h5,
+  .section-light h6 {
+    color: hsl(var(--color-carbon));
+  }
+  
+  .section-light p,
+  .section-light span:not(.text-ember):not(.text-copper) {
+    color: hsl(var(--color-iron));
+  }
+}
+
+@layer components {
+  /* Hero glow animation */
+  .hero-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { 
+      text-shadow: 0 0 20px hsl(var(--color-ember) / 0.5);
+      transform: scale(1);
+    }
+    50% { 
+      text-shadow: 0 0 40px hsl(var(--color-ember) / 0.8);
+      transform: scale(1.02);
+    }
+  }
+  
+  /* Particle effects */
+  .ember-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .ember-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: linear-gradient(135deg, hsl(var(--color-gold)), hsl(var(--color-copper)));
+    border-radius: 50%;
+    animation: float-up 8s ease-out infinite;
+    opacity: 0;
+    box-shadow: 0 0 6px hsl(var(--color-gold) / 0.4);
+  }
+
+  /* Light particles for SignatureExperience */
+  .light-particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .light-particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: linear-gradient(45deg, hsl(var(--color-gold)), hsl(var(--color-copper)));
+    border-radius: 50%;
+    animation: light-float 4s ease-in-out infinite;
+    opacity: 0;
+    box-shadow: 0 0 8px hsl(var(--color-gold) / 0.6), 0 0 16px hsl(var(--color-copper) / 0.3);
+  }
+
+  /* CSS 3D perspective support */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .perspective-origin-bottom {
+    perspective-origin: bottom;
+  }
+  
+  .transform-gpu {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  @keyframes float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100vh) translateX(0) scale(0);
+    }
+    15% {
+      opacity: 0.8;
+      transform: translateY(85vh) translateX(10px) scale(1);
+    }
+    85% {
+      opacity: 0.6;
+      transform: translateY(15vh) translateX(-10px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0) translateX(5px) scale(0);
+    }
+  }
+
+  @keyframes light-float {
+    0% {
+      opacity: 0;
+      transform: translateY(100%) translateX(0) scale(0.8);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(80%) translateX(20px) scale(1);
+    }
+    40% {
+      opacity: 0.8;
+      transform: translateY(60%) translateX(-15px) scale(1.1);
+    }
+    60% {
+      opacity: 0.6;
+      transform: translateY(40%) translateX(25px) scale(0.9);
+    }
+    80% {
+      opacity: 0.4;
+      transform: translateY(20%) translateX(-10px) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(0%) translateX(0) scale(0.8);
+    }
+  }
+  
+  /* Section spacing */
+  .section-padding {
+    padding: clamp(4rem, 8vw, 8rem) 0;
+  }
+  
+  /* Container */
+  .container-custom {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+  
+  /* Interactive elements */
+  .hover-ember {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-ember:hover {
+    box-shadow: var(--shadow-ember);
+    transform: translateY(-2px);
+  }
+  
+  /* Stairs section special styles */
+  .stairs-track {
+    position: relative;
+    height: 400px;
+  }
+  
+  .step {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    background: linear-gradient(90deg, hsl(var(--color-iron)), hsl(var(--color-carbon)));
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+  }
+  
+  .walls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, hsl(var(--color-carbon) / 0.1), hsl(var(--color-iron) / 0.2));
+    background-size: 200% 200%;
+  }
+  
+  .legna-mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(var(--color-ember));
+    text-shadow: var(--shadow-glow);
+    opacity: 0;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .ember-particle {
+    display: none;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
