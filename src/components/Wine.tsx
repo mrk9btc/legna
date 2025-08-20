@@ -89,33 +89,7 @@ export const Wine = () => {
           ))}
         </div>
         
-        {/* Mini-mosaic */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-12">
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform rotate-2">
-            <img
-              src="https://source.unsplash.com/400x400/?decanter,wine"
-              alt="Decantación de vino"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform -rotate-1">
-            <img
-              src="https://source.unsplash.com/400x400/?wine,bottles"
-              alt="Botellero premium"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform rotate-1">
-            <img
-              src="https://source.unsplash.com/400x400/?sommelier,tasting"
-              alt="Servicio de sommelier"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
+
         
         {/* Bottom section */}
         <div className="mt-16 text-center">

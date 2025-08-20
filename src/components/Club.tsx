@@ -103,33 +103,7 @@ Acceso exclusivo · Lista reservada
           </Button>
         </div>
 
-        {/* Mini-mosaic */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mt-12">
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform rotate-1">
-            <img
-              src="https://source.unsplash.com/400x400/?led,club"
-              alt="Túnel LED inmersivo"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform -rotate-2">
-            <img
-              src="https://source.unsplash.com/400x400/?cocktail,bar"
-              alt="Coctelería teatral"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div className="aspect-square rounded-lg overflow-hidden shadow-elegant transform rotate-1">
-            <img
-              src="https://source.unsplash.com/400x400/?nightclub,vip"
-              alt="Ambiente VIP exclusivo"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-        </div>
+
 
 
       </div>

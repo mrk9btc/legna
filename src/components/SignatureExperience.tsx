@@ -225,66 +225,7 @@ export const SignatureExperience = () => {
           </div>
         </div>
 
-        {/* Features cards - organizzate meglio */}
-        <div className="space-y-8 mb-12">
-          <div className="text-center">
-            <div className="eyebrow mb-4 text-copper">Características Técnicas</div>
-            <h3 className="font-display text-2xl font-medium text-cream mb-8">
-              Componentes de la experiencia inmersiva
-            </h3>
-          </div>
-          
-          {/* Grid de features organizado */}
-          <div className="grid md:grid-cols-3 gap-6">
-            {contentData.signatureExperience.features.map((feature, index) => {
-              const IconComponent = featureIcons[index % featureIcons.length];
-              return (
-                <div 
-                  key={index}
-                  className={`feature-card rounded-3xl p-6 backdrop-blur-sm transition-all duration-500 group text-center ${
-                    index === 2 
-                      ? "bg-cream/15 border-2 border-gold/30 hover:bg-cream/20 hover:border-gold/50" 
-                      : "bg-cream/5 border border-slate-600 hover:bg-cream/10"
-                  }`}
-                >
-                  <div className="mb-4">
-                    <div className="w-16 h-16 bg-gold/10 border border-gold/20 rounded-2xl flex items-center justify-center group-hover:bg-gold/20 transition-colors mx-auto">
-                      <IconComponent className="w-8 h-8 text-gold" />
-                    </div>
-                  </div>
-                  <h3 className="font-display text-lg font-medium text-cream mb-3 group-hover:text-gold transition-colors">
-                    {feature.title}
-                  </h3>
-                  <p className="text-cream/70 leading-relaxed mb-4 text-sm">
-                    {feature.description}
-                  </p>
-                  
-                  {/* Detalles técnicos adicionales */}
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    {index === 0 && (
-                      <>
-                        <span className="px-3 py-1 bg-gold/10 text-gold text-xs rounded-full">Mapping 3D</span>
-                        <span className="px-3 py-1 bg-copper/10 text-copper text-xs rounded-full">Interactivo</span>
-                      </>
-                    )}
-                    {index === 1 && (
-                      <>
-                        <span className="px-3 py-1 bg-gold/10 text-gold text-xs rounded-full">LED Cálidos</span>
-                        <span className="px-3 py-1 bg-copper/10 text-copper text-xs rounded-full">Regulable</span>
-                      </>
-                    )}
-                    {index === 2 && (
-                      <>
-                        <span className="px-3 py-1 bg-gold/10 text-gold text-xs rounded-full">Sincronía</span>
-                        <span className="px-3 py-1 bg-copper/10 text-copper text-xs rounded-full">Seamless</span>
-                      </>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+
 
         {/* Especificaciones técnicas y números - dos columnas */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
