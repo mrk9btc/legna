@@ -299,6 +299,21 @@
         "url": "/tavolo-inspo.png",
         "alt": "Mesa elegante con mise en place LEGNA",
         "category": "comunidad"
+      },
+      {
+        "url": "/meat.png",
+        "alt": "Corte premium de carne a la brasa italiana",
+        "category": "platos"
+      },
+      {
+        "url": "/meat1.png",
+        "alt": "Selección de carnes LEGNA - técnica italiana",
+        "category": "platos"
+      },
+      {
+        "url": "/meat2.png",
+        "alt": "Preparación artesanal de carnes a la brasa",
+        "category": "platos"
       }
     ]
   }
